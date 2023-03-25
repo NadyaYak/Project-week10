@@ -1,14 +1,18 @@
 .App {
    text-align: center;
-   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ46ewMOPGaiwPmzseVUPvbacP1VZgBbCNvg&usqp=CAU");
+   background-image: url("file:///C:/Users/rafae/Desktop/images/winter2.webp");
     position: fixed;
     min-width: 100%;
     min-height: 100%;
     background-size: cover;
     background-position: center;
     font-weight: 700;
-    font-size: large;
-}
+    font-size: x-large;
+    
+    
+
+
+      }
 
 .App-logo {
   height: 40vmin;
@@ -44,4 +48,10 @@
     transform: rotate(360deg);
   }
 }
-
+.searchBar input{
+  padding: 0.7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25%;
+  border: 1px solid rgba(255,255,255,0.8);
+  background:rgba(255,255,255,0.1)
+}

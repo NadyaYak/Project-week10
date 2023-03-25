@@ -1,10 +1,13 @@
-import React from 'react'
+import React from "react";
+
 
 function Nav(props) {
   return (
     <div className="nav">
-            </div>
-  )
+      <button>°C</button>
+
+    </div>
+  );
 }
 
-export default Nav
+export default Nav;
