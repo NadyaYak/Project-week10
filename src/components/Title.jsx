@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Title() {
+function Title(props) {
   return (
-    <div>Title</div>
+    <div className="title">
+      <h1>Weather</h1>
+    </div>
   )
 }
 

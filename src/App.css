@@ -1,5 +1,13 @@
 .App {
-  text-align: center;
+   text-align: center;
+   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ46ewMOPGaiwPmzseVUPvbacP1VZgBbCNvg&usqp=CAU");
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+    font-weight: 700;
+    font-size: large;
 }
 
 .App-logo {
@@ -36,3 +44,4 @@
     transform: rotate(360deg);
   }
 }
+
