@@ -1,7 +1,8 @@
 import React from 'react'
 
-function Description(data) {
-function
+function Description({data}) {
+  if ()
+
 
 
 
