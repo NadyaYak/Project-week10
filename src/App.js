@@ -9,28 +9,30 @@ import { useState, useEffect } from 'react';
 
 
 function App() {
-  const apiKey =cc0938f5c5704d3c39799aff9a469acc
-
-  const [data, setData]= useState({})
-  const getData = async (searchTerm) => {
-    // make fetch request and store response
-    const response = await fetch(
-     'https://api.openweathermap.org/data/2.5/weather?q=${city}&appid={API key}'
-
-
-      const data = await response.json();
+    const apiKey ="cc0938f5c5704d3c39799aff9a469acc";
+    const [searchTerm, setSearchTerm] = useState('');
+    const [data, setData]= useState({});
   
-
- })
-
-  return (
-    <div className="App">
-    <Title/>
-     <Nav/> 
-    <SearchBar/>
-    <Description/>
-    <Bottom/>
- 
+    const getData = async (searchTerm) => {
+      const response = await fetch(
+        `https://api.openweathermap.org/data/2.5/weather?q=${searchTerm}&appid=${apiKey}`
+      );
+      const data = await response.json();
+      setData(data);
+    };
+  
+    useEffect(() => {
+      getData(searchTerm);
+    }, [searchTerm]);
+  
+    return (
+      <div className="App">
+        <Title />
+        <Nav />
+        <SearchBar setSearchTerm={setSearchTerm} />
+        <Description data={data} />
+        <Bottom />
+      </div>
     
     </div>
   );
