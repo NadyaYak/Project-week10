@@ -1,6 +1,7 @@
 import React from 'react'
 
-function Description(props) {
+function Description(data) {
+  
   return (
     <div className="description">
       <div className="location">
