@@ -9,41 +9,25 @@ import { useState, useEffect } from 'react';
 
 
 function App() {
+  const apiKey =cc0938f5c5704d3c39799aff9a469acc
 
   const [data, setData]= useState({})
-  const [location, setLocation] =useState('')
-
-const url ="https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=cc0938f5c5704d3c39799aff9a469acc"
-const handleCityChange = (e) => {
-  setCity(e.target.value);
-};
-onst handleSearch = () => {
-  fetch(API_URL)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Could not fetch weather data for that city.");
-      }
-      return response.json();
-    })
-    .then((data) => {
-      setData(data);
-      setLocation(`${data.name}, ${data.weather[0].description}`);
-      setError(null);
-    })
-    .catch((error) => {
-      setError(error.message);
-      setData(null);
-      setLocation(null);
-    });
-};
-
-useEffect(() => {
-  if (city !== "") {
-    handleSearch();
-  }
-}, [city]);
+  const getData = async (searchTerm) => {
+    // make fetch request and store response
+    const response = await fetch(
+     'https://api.openweathermap.org/data/2.5/weather?q=${city}&appid={API key}'
 
 
+      const data = await response.json();
+      //set the Movie state to the movie
+      setMovie(data);
+ /* const [location, setLocation] =useState('')
+
+let response = fetch()
+ fetch()
+ .then(response=>{*/
+
+ })
 
   return (
     <div className="App">
