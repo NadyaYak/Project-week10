@@ -19,7 +19,7 @@ function SearchBar({setSearchTerm}) {
            value={inputValue}
            onChange={(event) =>setInputValue(event.target.value)}
            />
-           
+           <button onClick={handleClick}>Search</button>
 
        
          
