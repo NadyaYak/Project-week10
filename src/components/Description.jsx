@@ -1,7 +1,10 @@
 import React from 'react'
 
 function Description(data) {
-  
+function
+
+
+
   return (
     <div className="description">
       <div className="location">
