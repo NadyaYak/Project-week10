@@ -19,13 +19,7 @@ function App() {
 
 
       const data = await response.json();
-      //set the Movie state to the movie
-      setMovie(data);
- /* const [location, setLocation] =useState('')
-
-let response = fetch()
- fetch()
- .then(response=>{*/
+  
 
  })
 
