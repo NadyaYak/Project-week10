@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Description({data}) {
-  if ()
+  if (!data)
 
 
 
